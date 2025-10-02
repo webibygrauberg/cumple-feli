@@ -84,7 +84,7 @@ function App() {
         <div className="flex justify-center mt-[-20] px-4">
             <button
               onClick={() => window.open("https://forms.gle/iMfCuvzhrQQEtKoB9", "_blank")}
-              className="bg-gradient-to-r from-green-500 to-blue-500 rounded-2xl text-white px-20 py-5 rounded-lg hover:bg-blue-700 transition"
+              className="shadow-xl bg-gradient-to-r from-green-500 to-blue-500 rounded-2xl text-white px-20 py-5 rounded-lg hover:bg-blue-700 transition"
             >
               CONFIRMAR ASISTENCIA
             </button>
@@ -94,7 +94,7 @@ function App() {
           <CalendarButton />
         </section>
 
-        <section className="py-16 bg-white/70 backdrop-blur-sm">
+        <section className="py-16 bg-white/70 backdrop-blur-sm mt-[-60px]">
           <PhotoGallery key={galleryKey} />
         </section>
 
