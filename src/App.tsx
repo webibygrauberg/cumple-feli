@@ -60,7 +60,7 @@ function App() {
         </section>
 
         <section className="py-16">
-          <div className="max-w-4xl mx-auto px-4 mb-12">
+          <div className="max-w-4xl mx-auto px-4 mb-2">
             <div className="bg-gradient-to-r from-blue-500 to-cyan-500 rounded-2xl p-8 md:p-12 text-white shadow-xl text-center">
               <h3 className="text-3xl md:text-4xl font-bold mb-4">
                 Detalles del Evento
@@ -81,10 +81,10 @@ function App() {
         </section>
 
         {/* Botón para confirmar*/}
-        <div className="flex justify-center py-12">
+        <div className="flex justify-center mt-[-20] px-4">
             <button
               onClick={() => window.open("https://forms.gle/iMfCuvzhrQQEtKoB9", "_blank")}
-              className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition"
+              className="bg-gradient-to-r from-green-500 to-blue-500 rounded-2xl text-white px-20 py-5 rounded-lg hover:bg-blue-700 transition"
             >
               CONFIRMAR ASISTENCIA
             </button>
