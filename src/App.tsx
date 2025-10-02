@@ -98,15 +98,7 @@ function App() {
           <PhotoGallery key={galleryKey} />
         </section>
 
-        {/* Botón para confirmar*/}
-        <div className="flex justify-center py-5">
-            <button
-              onClick={() => window.open("https://forms.gle/iMfCuvzhrQQEtKoB9", "_blank")}
-              className="w-full bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition"
-            >
-              CONFIRMAR ASISTENCIA
-            </button>
-        </div>
+        
                 
           
         
