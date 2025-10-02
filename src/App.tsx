@@ -4,6 +4,8 @@ import Countdown from './components/Countdown';
 import CalendarButton from './components/CalendarButton';
 import PhotoGallery from './components/PhotoGallery';
 import SectionPortada from "./components/SectionPortada";
+import { Helmet } from 'react-helmet';
+
 
 
 function App() {
@@ -17,6 +19,14 @@ function App() {
   
   return (
     <div className="min-h-screen ">
+      <Helmet>
+        <title>Felipe cumple 5 años</title>
+        <meta property="og:title" content="¡Estás invitado a mi cumple!" />
+        <meta property="og:description" content="Vení a celebrar con nosotros este día tan especial 🎉" />
+        <meta property="og:image" content="/img/portadafeliwtp.png" />
+        <meta property="og:url" content="https://cumple-feli.netlify.app/" />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <div
         className={`transition-opacity duration-1000 ${
           isVisible ? 'opacity-100' : 'opacity-0'
