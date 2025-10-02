@@ -1,11 +1,9 @@
 import { useEffect, useState, useCallback } from 'react';
 import { PartyPopper } from 'lucide-react';
 import Countdown from './components/Countdown';
-import RSVPForm from './components/RSVPForm';
 import CalendarButton from './components/CalendarButton';
 import PhotoGallery from './components/PhotoGallery';
 import SectionPortada from "./components/SectionPortada";
-import AdminPage from './app/admin/page';
 
 
 function App() {
@@ -82,9 +80,15 @@ function App() {
           </div>
         </section>
 
-        <section className="py-16 bg-white/70 backdrop-blur-sm">
-          <RSVPForm />
-        </section>
+        {/* Botón para confirmar*/}
+        <div className="flex justify-center py-12">
+            <button
+              onClick={() => window.open("https://forms.gle/iMfCuvzhrQQEtKoB9", "_blank")}
+              className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition"
+            >
+              CONFIRMAR ASISTENCIA
+            </button>
+        </div>
 
         <section className="py-16">
           <CalendarButton />
@@ -94,16 +98,16 @@ function App() {
           <PhotoGallery key={galleryKey} />
         </section>
 
-        {/* Botón para ir a AdminPage */}
-        <div className="flex justify-center py-12">
-          <button
-            onClick={() => window.open("/admin", "_blank")} // abre en nueva pestaña
-            className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition"
-          >
-            Ver lista de invitados
-          </button>
+        {/* Botón para confirmar*/}
+        <div className="flex justify-center py-5">
+            <button
+              onClick={() => window.open("https://forms.gle/iMfCuvzhrQQEtKoB9", "_blank")}
+              className="w-full bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition"
+            >
+              CONFIRMAR ASISTENCIA
+            </button>
         </div>
-            
+                
           
         
 
