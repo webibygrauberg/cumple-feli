@@ -85,11 +85,7 @@ export default function PhotoGallery() {
         </div>
       )}
 
-      <p className="text-center text-sm text-gray-500 mt-8 italic">
-        {photos.length > 0
-          ? `${photos.length} foto${photos.length !== 1 ? 's' : ''} subida${photos.length !== 1 ? 's' : ''} por los invitados`
-          : 'Las fotos subidas por los invitados aparecerán aquí'}
-      </p>
+      
     </div>
   );
 }

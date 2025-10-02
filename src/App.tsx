@@ -52,7 +52,7 @@ function App() {
                     <span className="font-medium">📅 22 de Octubre, 2025</span>
                   </div>
                   <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
-                    Ven a celebrar conmigo este día tan especial. Habrá juegos, música, y mucha diversión.
+                    Vení a celebrar con nosotros este día tan especial. Tendrémos juegos, música, y mucha diversión.
                   </p>
                 </div>
               </div>
