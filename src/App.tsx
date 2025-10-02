@@ -4,7 +4,6 @@ import Countdown from './components/Countdown';
 import RSVPForm from './components/RSVPForm';
 import CalendarButton from './components/CalendarButton';
 import PhotoGallery from './components/PhotoGallery';
-import PhotoUpload from './components/PhotoUpload';
 import SectionPortada from "./components/SectionPortada";
 
 
@@ -16,10 +15,7 @@ function App() {
     setIsVisible(true);
   }, []);
 
-  const handlePhotoUploaded = useCallback(() => {
-    setGalleryKey(prev => prev + 1);
-  }, []);
-
+  
   return (
     <div className="min-h-screen ">
       <div
